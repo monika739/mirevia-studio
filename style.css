@@ -1,0 +1,741 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf6;
+    color: #493a38;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    min-height: 90px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffaf6;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.logo span {
+    font-size: 17px;
+    color: #bd9294;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-button {
+    text-decoration: none;
+    color: white;
+    background: #493a38;
+    padding: 13px 27px;
+    border-radius: 30px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(
+        110deg,
+        #f4e5df,
+        #ead3d0,
+        #f8eee8
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #a47778;
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.15;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 470px;
+    color: #766360;
+    margin-bottom: 35px;
+}
+
+.main-button {
+    display: inline-block;
+    background: #493a38;
+    color: white;
+    text-decoration: none;
+    padding: 17px 32px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.main-button:hover,
+.header-button:hover {
+    background: #a47778;
+}
+
+/* COLLECTION */
+
+.collection {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product {
+    text-align: left;
+}
+
+.product-image {
+    height: 340px;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    transition: 0.4s;
+}
+
+.product-image:hover {
+    transform: translateY(-7px);
+}
+
+.wedding {
+    background: linear-gradient(145deg, #ead4d0, #c9a7a0);
+}
+
+.planner {
+    background: linear-gradient(145deg, #e9e0d2, #c6b8a3);
+}
+
+.templates {
+    background: linear-gradient(145deg, #e7d5dc, #c9a9b5);
+}
+
+.product h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #8c7771;
+}
+
+/* ABOUT */
+
+.about {
+    background: #f1e5df;
+    padding: 100px 15%;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.9;
+    color: #766360;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    font-size: 13px;
+    color: #8c7771;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 60px 7%;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.collection {
+    padding: 100px 10%;
+    background: #fffaf7;
+}
+
+.collection-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.eyebrow {
+    color: #b77e78;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.collection-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #493b38;
+    margin: 18px 0;
+}
+
+.collection-heading p {
+    color: #8b7771;
+    font-size: 15px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.product-card {
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-image {
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+    background: #eadbd5;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-image span {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    background: #fffaf7;
+    color: #765b55;
+    padding: 9px 13px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info p {
+    color: #b77e78;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.product-info h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #493b38;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color: #493b38;
+}
+
+.product-bottom a {
+    color: #9e6f68;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection {
+        padding: 65px 6%;
+    }
+
+    .collection-heading h2 {
+        font-size: 32px;
+    }
+
+    .product-image {
+        height: 280px;
+    }
+}
+ 
+/* =================================
+   MIREVIA STUDIO — PRODUCT PAGE
+================================= */
+
+.product-page {
+    padding: 45px 0 80px;
+    background: #fffaf7;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 35px;
+    color: #8d716b;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.back-link:hover {
+    color: #b77e78;
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 75px;
+    align-items: start;
+}
+
+.product-gallery {
+    width: 100%;
+}
+
+.main-preview {
+    position: relative;
+    overflow: hidden;
+    background: #eadbd5;
+    border-radius: 5px;
+}
+
+.main-preview img {
+    width: 100%;
+    height: 620px;
+    display: block;
+    object-fit: cover;
+}
+
+.preview-label {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    background: #fffaf7;
+    padding: 12px 18px;
+    color: #8d716b;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.preview-caption {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    color: #a38d85;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.product-description {
+    padding-top: 25px;
+}
+
+.product-description h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #493b38;
+}
+
+.product-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin: 25px 0;
+    color: #493b38;
+}
+
+.description-text {
+    color: #8b7771;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.product-features {
+    margin: 30px 0;
+    border-top: 1px solid #eadbd5;
+}
+
+.product-features p {
+    padding: 15px 0;
+    border-bottom: 1px solid #eadbd5;
+    color: #76645e;
+    font-size: 13px;
+}
+
+.product-options {
+    margin: 30px 0;
+}
+
+.product-options label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #493b38;
+}
+
+.product-options select {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #dfcbc3;
+    background: #fffaf7;
+    color: #493b38;
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+}
+
+.order-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.secure-note {
+    text-align: center;
+    margin: 17px 0 30px;
+    color: #a38d85;
+    font-size: 11px;
+}
+
+.product-extra {
+    border-top: 1px solid #eadbd5;
+}
+
+.product-extra details {
+    padding: 18px 0;
+    border-bottom: 1px solid #eadbd5;
+    color: #493b38;
+    font-size: 13px;
+}
+
+.product-extra summary {
+    cursor: pointer;
+}
+
+.product-extra details p {
+    padding-top: 15px;
+    line-height: 1.8;
+    color: #8b7771;
+}
+
+@media (max-width: 800px) {
+
+    .product-page {
+        padding: 30px 0 60px;
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-preview img {
+        height: 420px;
+    }
+
+    .product-description {
+        padding-top: 0;
+    }
+
+    .product-description h1 {
+        font-size: 37px;
+    }
+}
+/* PRODUCT PAGE HEADER */
+.product-page ~ .footer {
+    margin-top: 0;
+}
+
+.header .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header .logo {
+    text-decoration: none;
+    color: #493a38;
+}
+
+.header .navigation a {
+    text-decoration: none;
+    color: #493a38;
+    transition: color 0.3s ease;
+}
+
+.header .navigation a:hover {
+    color: #bd9294;
+}
+/* ORDER BUTTON */
+.order-button {
+    display: block;
+    width: 100%;
+    padding: 16px 25px;
+    margin-top: 25px;
+    background: #493a38;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-button:hover {
+    background: #bd9294;
+    transform: translateY(-2px);
+}
+.preview-button {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #493a38;
+    background: transparent;
+    border: 1px solid #bd9294;
+    border-radius: 3px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.preview-button:hover {
+    background: #f3e6e3;
+}
+/* WEDDING ORDER FORM */
+
+.order-form-section {
+    display: none;
+    padding: 70px 20px;
+    background: #fffaf7;
+}
+
+.order-form-section.active {
+    display: block;
+}
+
+.order-form-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #ffffff;
+    border: 1px solid #eadbd5;
+}
+
+.order-form-card h2 {
+    margin: 15px 0;
+    color: #493a38;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.order-form-card > p {
+    color: #897b76;
+    margin-bottom: 30px;
+}
+
+#weddingOrderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#weddingOrderForm label {
+    margin-top: 12px;
+    color: #493a38;
+    font-size: 14px;
+}
+
+#weddingOrderForm input,
+#weddingOrderForm select,
+#weddingOrderForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #e5d8d2;
+    background: #fffdfc;
+    color: #493a38;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+#weddingOrderForm textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+#weddingOrderForm input:focus,
+#weddingOrderForm select:focus,
+#weddingOrderForm textarea:focus {
+    outline: none;
+    border-color: #bd9294;
+}
+
+@media (max-width: 600px) {
+    .order-form-card {
+        padding: 25px 18px;
+    }
+
+    .order-form-card h2 {
+        font-size: 26px;
+    }
+}
+/* ORDER SUCCESS MESSAGE */
+
+.success-section {
+    display: none;
+    padding: 70px 20px;
+    background: #fffaf7;
+}
+
+.success-section.active {
+    display: block;
+}
+
+.success-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 55px 35px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #eadbd5;
+}
+
+.success-icon {
+    color: #bd9294;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.success-card h2 {
+    color: #493a38;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.success-card p {
+    color: #897b76;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.success-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #493a38;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.success-button:hover {
+    background: #bd9294;
+}

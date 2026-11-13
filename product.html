@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding Invitations | Mirevia Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            Mirevia <span>Studio</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#collection">Collection</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </div>
+</header>
+
+<main class="product-page">
+
+    <div class="container">
+
+        <a href="index.html#collection" class="back-link">
+            ← Back to Collection
+        </a>
+
+        <div class="product-detail">
+
+            <div class="product-gallery">
+
+                <div class="main-preview">
+                    <img
+                        src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1000"
+                        alt="Elegant wedding inspiration"
+                    >
+                    <span class="preview-label">WEDDING COLLECTION</span>
+                </div>
+
+                <div class="preview-caption">
+                    <span>01 / ELEGANT WEDDING DESIGN</span>
+                    <span>Made with love</span>
+                </div>
+
+            </div>
+
+            <div class="product-description">
+
+                <span class="eyebrow">MIREVIA EXCLUSIVE</span>
+
+                <h1>Elegant Wedding Invitation</h1>
+
+                <div class="product-price">$5.00</div>
+
+                <p class="description-text">
+                    Celebrate your special day with an invitation
+                    that feels as beautiful as the moment itself.
+                </p>
+
+                <div class="product-features">
+                    <p>✧ Elegant and romantic design</p>
+                    <p>✧ Personalized names and event details</p>
+                    <p>✧ Digital invitation</p>
+                    <p>✧ Ready to share with your guests</p>
+                </div>
+
+                <div class="product-options">
+
+                    <label for="design">Choose your style</label>
+
+                    <select id="design">
+                        <option>Classic Elegance</option>
+                        <option>Floral Romance</option>
+                        <option>Modern Minimalism</option>
+                        <option>Bridgerton Style</option>
+                    </select>
+
+                </div>
+
+                <a href="https://curious-canvas-kickoff.lovable.app"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="preview-button">
+    Live Preview ↗
+</a>
+
+<button class="primary-button order-button" 
+onclick="openOrderForm()">
+    Order Now →
+</button>
+
+                <p class="secure-note">
+                    Digital product · Personalized design
+                </p>
+
+                <div class="product-extra">
+                    <details>
+                        <summary>What will I receive?</summary>
+                        <p>A personalized digital wedding invitation.</p>
+                    </details>
+
+                    <details>
+                        <summary>Can I customize my invitation?</summary>
+                        <p>Yes! Names, date, location and other details
+                           can be personalized.</p>
+                    </details>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+<section class="order-form-section" id="orderForm">
+    <div class="container">
+        <div class="order-form-card">
+            <span class="eyebrow">LET'S CREATE SOMETHING BEAUTIFUL</span>
+            <h2>Your Wedding Invitation</h2>
+            <p>Tell us about your special day.</p>
+
+            <form id="weddingOrderForm">
+                <label for="customerName">Your name</label>
+                <input
+                type="text"
+    id="customerName"
+    placeholder="Your name"
+    required
+>
+
+<label for="customerPhone">Your WhatsApp number</label>
+<input
+    type="tel"
+    id="customerPhone"
+    placeholder="+996 XXX XXX XXX"
+    required
+>
+                <label for="coupleNames">Names of the couple</label>
+                <input type="text" id="coupleNames"
+                       placeholder="e.g. Anna & David" required>
+
+                <label for="weddingDate">Wedding date</label>
+                <input type="date" id="weddingDate" required>
+
+                <label for="weddingTime">Wedding time</label>
+                <input type="time" id="weddingTime">
+
+                <label for="restaurant">Restaurant and address</label>
+                <input type="text" id="restaurant"
+                       placeholder="Restaurant name and address">
+
+                <label for="language">Invitation language</label>
+                <select id="language">
+                    <option value="Russian">Russian</option>
+                    <option value="Kyrgyz">Kyrgyz</option>
+                    <option value="English">English</option>
+                </select>
+                <label for="designStyle">Стиль приглашения</label>
+<select id="designStyle">
+    <option value="Bridgerton">Bridgerton — королевская элегантность</option>
+    <option value="Floral Romance">Floral Romance — нежные цветы</option>
+    <option value="Classic Elegance">Classic Elegance — классика</option>
+    <option value="Modern Minimalism">Modern Minimalism — минимализм</option>
+</select>
+
+                <label for="wishes">Additional wishes</label>
+                <textarea id="wishes"
+                          placeholder="Tell us about your preferred design..."></textarea>
+
+                <button type="submit" class="primary-button order-button">
+                    Send Order via WhatsApp →
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="success-section" id="orderSuccess">
+    <div class="success-card">
+        <div class="success-icon">✧</div>
+
+        <span class="eyebrow">MIREVIA STUDIO</span>
+
+        <h2>Спасибо за ваш заказ!</h2>
+
+        <p>
+            Ваша заявка подготовлена.
+            Отправьте её нам через WhatsApp,
+            и мы свяжемся с вами для подтверждения.
+        </p>
+
+        <a href="#collection" class="success-button">
+            Вернуться в магазин →
+        </a>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="index.html" class="logo">
+            Mirevia <span>Studio</span>
+        </a>
+        <p>Digital creations made with love.</p>
+        <div class="footer-bottom">
+            © 2026 Mirevia Studio. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+// Открываем форму заказа
+function openOrderForm() {
+    const form = document.getElementById("orderForm");
+
+    form.classList.add("active");
+
+    form.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+// Отправляем заказ в WhatsApp Mirevia Studio
+document.getElementById("weddingOrderForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const customerName = document.getElementById("customerName").value;
+    const customerPhone = document.getElementById("customerPhone").value;
+    const names = document.getElementById("coupleNames").value;
+    const date = document.getElementById("weddingDate").value;
+    const time = document.getElementById("weddingTime").value;
+    const restaurant = document.getElementById("restaurant").value;
+    const language = document.getElementById("language").value;
+    const designStyle = document.getElementById("designStyle").value;
+    const wishes = document.getElementById("wishes").value;
+
+    const message =
+    "НОВЫЙ ЗАКАЗ — MIREVIA STUDIO\n\n" +
+    "Имя клиента: " + customerName + "\n" +
+    "WhatsApp клиента: " + customerPhone + "\n\n" +
+    "Имена молодожёнов: " + names + "\n" +
+    "Дата свадьбы: " + date + "\n" +
+    "Время: " + (time || "Не указано") + "\n" +
+    "Ресторан и адрес: " + (restaurant || "Не указано") + "\n" +
+    "Язык приглашения: " + language + "\n" +
+    "Стиль приглашения: " + designStyle + "\n" +
+    "Пожелания: " + (wishes || "Нет");
+
+    const whatsappURL =
+        "https://wa.me/996550002701?text=" + encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+    // Показываем подтверждение на странице
+const success = document.getElementById("orderSuccess");
+
+success.classList.add("active");
+
+success.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
+});
+</script>
+
+</body>
+</html>
